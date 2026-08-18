@@ -11,7 +11,7 @@ export default function Footer() {
     <footer className="bg-navy text-cream border-t border-cream/10">
       <div className="mx-auto max-w-6xl px-6 py-16 grid gap-10 md:grid-cols-3">
         <div>
-          <Logo tone="light" withSubtitle />
+          <Logo tone="light" withWordmark />
           <p className="mt-4 text-cream/60 font-light max-w-xs">{brand.tagline}</p>
         </div>
 
@@ -45,7 +45,7 @@ export default function Footer() {
       <div className="border-t border-cream/10">
         <div className="mx-auto max-w-6xl px-6 py-6 flex flex-col sm:flex-row justify-between gap-2 text-sm text-cream/40">
           <span>© {year} {brand.name} {brand.subtitle}. All rights reserved.</span>
-          <span className="font-script text-base">Meet me in {brand.location}</span>
+          <span className="text-base tracking-wide text-cream/50">Meet me in {brand.location}</span>
         </div>
       </div>
     </footer>

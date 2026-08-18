@@ -1,5 +1,5 @@
 /**
- * A single service that the AVE. team offers.
+ * A single service that the ooo team offers.
  *
  * This is a plain data class (a "model"). Keeping it as a class means every
  * service in the site is built the same way and can grow later — e.g. you

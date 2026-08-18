@@ -1,8 +1,9 @@
-import { hero, brand } from '../data/siteContent.js'
+import { hero, brand, media } from '../data/siteContent.js'
 
 /**
- * Full-height opening section. Deep navy backdrop with the editorial serif
- * headline, echoing the AVE. brand deck.
+ * Full-height opening section. Deep navy backdrop with an editorial photograph
+ * from the content deck sitting behind a dark overlay, keeping the serif
+ * headline legible.
  */
 export default function Hero() {
   return (
@@ -10,19 +11,25 @@ export default function Hero() {
       id="top"
       className="relative min-h-screen flex items-center bg-navy text-cream overflow-hidden"
     >
-      {/* Subtle radial glow for depth */}
+      {/* Background photograph (from the Figma content page) */}
+      <img
+        src={media.workspace}
+        alt=""
+        className="absolute inset-0 h-full w-full object-cover opacity-25"
+      />
+      {/* Navy gradient overlay for text contrast */}
       <div
-        className="pointer-events-none absolute inset-0 opacity-40"
+        className="pointer-events-none absolute inset-0"
         style={{
           background:
-            'radial-gradient(60% 60% at 70% 30%, rgba(84,58,44,0.55) 0%, rgba(15,26,43,0) 70%)',
+            'linear-gradient(90deg, rgba(15,26,43,0.96) 0%, rgba(15,26,43,0.82) 45%, rgba(15,26,43,0.55) 100%)',
         }}
       />
 
-      <div className="relative mx-auto max-w-6xl px-6 py-32">
-        <p className="font-script text-2xl text-cream/70">{hero.eyebrow}</p>
+      <div className="relative mx-auto max-w-6xl px-6 py-32 w-full">
+        <p className="font-sans text-sm uppercase tracking-[0.25em] text-cream/60">{hero.eyebrow}</p>
 
-        <h1 className="mt-4 font-serif text-6xl sm:text-7xl lg:text-8xl leading-[0.95]">
+        <h1 className="mt-5 font-serif text-5xl sm:text-6xl lg:text-7xl leading-[1.02] max-w-3xl">
           {hero.headline}
         </h1>
 

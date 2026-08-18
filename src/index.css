@@ -1,6 +1,6 @@
 /* Tailwind v4 is configured here, CSS-first. The @theme block is where you
    customize the design tokens (colors, fonts). Edit these to re-skin the site.
-   Values were taken directly from the AVE. Figma file. */
+   Values were taken from the ooo marketing collective Figma file. */
 @import "tailwindcss";
 
 @theme {
@@ -14,7 +14,6 @@
   /* Fonts (from Figma) */
   --font-serif: "Instrument Serif", ui-serif, Georgia, serif;   /* display / headings */
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;   /* body */
-  --font-script: "Liu Jian Mao Cao", cursive;                   /* handwritten accents */
 }
 
 html {

@@ -33,7 +33,7 @@ export class ContactFormService {
     //
     await new Promise((resolve) => setTimeout(resolve, 700))
     // Log the cleaned payload so you can confirm what would be sent.
-    console.info('[AVE contact form] submission (not yet delivered):', submission.clean())
+    console.info('[ooo contact form] submission (not yet delivered):', submission.clean())
     return { ok: true }
   }
 }

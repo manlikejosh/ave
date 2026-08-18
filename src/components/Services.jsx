@@ -1,7 +1,7 @@
 import { servicesSection, hero } from '../data/siteContent.js'
 
 /**
- * "What does the AVE. Team Handle?" — the list of services, rendered from the
+ * "What does the ooo team handle?" — the list of services, rendered from the
  * Service model instances in siteContent.js. Add or remove a `new Service(...)`
  * there and this grid updates automatically.
  */
@@ -16,7 +16,7 @@ export default function Services() {
         <ul className="grid gap-px bg-cream/10 sm:grid-cols-2 lg:grid-cols-3 rounded-2xl overflow-hidden">
           {servicesSection.services.map((service, index) => (
             <li key={service.title} className="bg-navy p-8 flex flex-col gap-3">
-              <span className="font-script text-2xl text-cream/40">
+              <span className="font-sans text-sm tracking-widest text-cream/40">
                 {String(index + 1).padStart(2, '0')}
               </span>
               <h3 className="font-serif text-2xl">{service.title}</h3>

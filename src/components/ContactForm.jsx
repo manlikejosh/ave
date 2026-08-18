@@ -51,7 +51,7 @@ export default function ContactForm() {
   return (
     <section id="contact" className="bg-navy text-cream">
       <div className="mx-auto max-w-3xl px-6 py-24">
-        <p className="font-script text-2xl text-cream/60">{contact.eyebrow}</p>
+        <p className="font-sans text-sm uppercase tracking-[0.25em] text-cream/60">{contact.eyebrow}</p>
         <h2 className="font-serif text-4xl sm:text-5xl mt-2">{contact.heading}</h2>
         <p className="mt-4 text-cream/70 font-light">{contact.body}</p>
 

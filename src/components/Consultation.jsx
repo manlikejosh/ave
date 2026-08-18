@@ -12,7 +12,7 @@ export default function Consultation() {
             {consultation.intro}
           </p>
 
-          <p className="font-script text-3xl mt-8 text-cream/80">{consultation.invite}</p>
+          <p className="font-serif italic text-3xl mt-8 text-cream/80">{consultation.invite}</p>
 
           <p className="mt-8 max-w-xl mx-auto font-light text-cream/80">{consultation.body}</p>
 

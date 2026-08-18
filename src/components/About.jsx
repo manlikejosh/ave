@@ -1,7 +1,7 @@
 import { about } from '../data/siteContent.js'
 
 /**
- * "What is AVE.?" — the agency's positioning statement.
+ * "What is ooo?" — the agency's positioning statement.
  */
 export default function About() {
   return (
